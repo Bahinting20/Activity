@@ -6,7 +6,7 @@
     .container {
         width: 30%;
         margin: 0 auto;
-        border-radius: 1px;
+        border-radius: 2px;
         }
 
     form {
@@ -28,18 +28,21 @@
       .title-container {
       text-align: center;
       margin-top: 5px;
+
+
 }
 
     input {
       margin-bottom: 10px;
-      padding: 5px;
+      padding: 10px;
       border-radius: 5px;
-      border: 1px solid gray;
+      border: 2px solid gray;
       width:100%;
       box-sizing:border-box ;
       align-items: center;
     
     }
+
     button {
       margin-top: 10px;
       padding: 10px;
@@ -149,22 +152,21 @@
     <input type="password" id="password" required placeholder="A mixture of letters and numbers">
 
     <button type="submit">Sign me Up</button>
-
-    <h5><label for="Already have a Salesforce development Environment?"> Already have a Salesforce development Environment?</label></h5>
   </form>
 </div>
-  <script>
+<script>
     const form = document.querySelector('form');
-    const nameInput = document.querySelector('#First name');
-    const nameInput = document.querySelector('#Last name');
-    const emailInput = document.querySelector('#email');
+    const First nameInput = document.querySelector('#First name'); 
+    const Last nameInput = document.querySelector('#Last name');
+    const EmailInput = document.querySelector('#email');
     const passwordInput = document.querySelector('#password');
 
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('Sign me Up', (event) => {
       event.preventDefault();
 
-      const name = nameInput.value.trim();
-      const email = emailInput.value.trim();
+      const First name = Fist nameInput.value.trim();
+      const Last name = Last nameInput.value.trim();
+      const Email = emailInput.value.trim();
       const password = passwordInput.value.trim();
 
       if (name === '' || email === '' || password === '') {
@@ -175,5 +177,6 @@
       }
     });
   </script>
+
 </body>
 </html>
